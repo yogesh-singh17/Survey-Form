@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <header id="header">
+        <h1 id="title" class="text-align">Shopping Survey Form</h1>
+        <p id="description" class="text-align">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <div id=form-container>
+        <form action="" method="POST" id="survey-form">
+            <div>
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+
+            </div>
+            <div>
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+
+            </div>
+            <div>
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" min="18" max="100" class="form-control" placeholder="Enter your Age">
+
+            </div>
+            <div>
+                <label for="dropdown">Location</label>
+                <select id="dropdown" class="form-control" name="location">
+                    <option class="option" value="Delhi">Delhi</option>
+                    <option class="option"value="Delhi">Outside Delhi</option>
+                    <option class="option"value="Delhi">Outside India</option>
+                </select>
+
+            </div>
+            <div>
+                <p>Gender</p>
+                <label for="Gender">
+                    <input type="radio" id="Gender" name="gender" value="Male">
+                    Male
+                    <label for="Gender">
+                        <input type="radio" id="Gender" name="gender" value="Female">
+                        Female
+                    </label>
+                    <label for="Gender">
+                        <input type="radio" id="Gender" name="gender" value="Others">
+                        Others
+                    </label>
+                </label>
+
+            </div>
+            <div>
+
+                <p>What are your Hobbies : </p>
+                <label>
+                    <input type="checkbox" name="hobbies" value="Football">
+                    Football
+                </label>
+                <label>
+                    <input type="checkbox" name="hobbies" value="Cricket">
+                    Cricket
+                </label>
+                <label>
+                    <input type="checkbox" name="hobbies" value="Video Game">
+                    Video Game
+                </label>
+            </div>
+            <div id=div-textarea>
+                <p>Any Feedback? Please feel free to write down below</p>
+                <textarea id="textarea" name="feedback" class="form-control"  placeholder="Give any feedback here"></textarea>
+            </div>
+            <div>
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
